@@ -22,7 +22,6 @@ const SongList = ({ dispatch, songList }) => {
     </div>
   );
 };
-
 SongList.propTypes = {
   songList: PropTypes.object,
   dispatch: PropTypes.func
