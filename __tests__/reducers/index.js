@@ -34,7 +34,6 @@ describe('Karaoke App', () => {
 
   });
 
-
   describe('songChangeReducer', () => {
     it('Should accept and return initial state.', () => {
       expect(songChangeReducer(initialState, { type: null })).toEqual(initialState);
