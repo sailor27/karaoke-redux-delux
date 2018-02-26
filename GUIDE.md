@@ -97,3 +97,18 @@ $ npm install react-redux@5.0.6 --save
 ## Fetching from an api
 Add fetch action to actions index:
 ![alt text](src/assets/images/fetch_action.png)
+
+
+Curried Function demo (use to create middleware)
+```
+var greetCurried = function(greeting) {
+	return function(name) {
+	console.log(greeting + ", " + name);
+ };
+};
+
+var greetHello = greetCurried("hello");
+var greetBye = greetCurried("auf weidersen");
+greetHello("Tim");
+greetBye("Heidi");
+```
